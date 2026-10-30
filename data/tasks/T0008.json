@@ -1,0 +1,33 @@
+{
+  "title": "ポートフォリオ用サンプルの作成",
+  "goal": "評価がない段階でも品質が伝わるよう、修正前後の見本を用意する。他社の文章を使うと権利の問題があるため、架空のゲームとアプリで作る。",
+  "steps": [
+    "data/plans/localization-ops.md の手順とテンプレートを読む",
+    "架空のインディーゲーム2本と架空のアプリ1本の英語のストアページを作る",
+    "機械翻訳にありがちな不自然な日本語訳（修正前）を作る",
+    "手順に沿って修正後の日本語と、修正理由の対照表を作る",
+    "人間（日本語ネイティブ）が確認すべき箇所に印を付ける"
+  ],
+  "done_criteria": [
+    "data/plans/localization-samples/ に3件のサンプル（英語原文、修正前、修正後、対照表）がある",
+    "実在の作品や企業の文章を使っていない",
+    "人間の確認が必要な箇所が明記されている"
+  ],
+  "depends_on": [
+    "T0006"
+  ],
+  "approval": null,
+  "id": "T0008",
+  "status": "done",
+  "created_at": "2026-10-29T08:50:46.489Z",
+  "updated_at": "2026-10-29T09:20:58.815Z",
+  "result": {
+    "summary": "data/plans/localization-samples/ に架空のサンプルを3件作った（Steamのインディーゲーム2件、App Storeのアプリ1件）。各ファイルには、英語の原文、機械翻訳風の修正前の日本語、修正後の日本語、§4.3の書式に合わせた対照表（英語の理由と逆翻訳つき）、文字数、人間の確認項目（H-xx、本文にも印あり）、用語集が入っている。実在の作品や企業の文章は使っていない。作品名はWeb検索でほかと重ならないことを確かめたが、商標の登録は未確認。修正前の文はAIが書いた作例で、実際の機械翻訳ツールの出力ではない（そう明記した）。注意点: (1) 修正後はすべてAIの下書きで、人間のS5/S6の確認がまだ。(2) スクリプトを動かせなかったため、文字数は目視の値のみで、【未確認】と書いた。(3) 公開は承認が必要で、まだ何も公開していない。",
+    "outputs": [
+      "data/plans/localization-samples/README.md",
+      "data/plans/localization-samples/sample1-mosswick-vaults.md",
+      "data/plans/localization-samples/sample2-ninefold-bellworks.md",
+      "data/plans/localization-samples/sample3-murmlet-focus-timer.md"
+    ]
+  }
+}
